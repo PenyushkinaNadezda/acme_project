@@ -23,6 +23,8 @@ class Birthday(models.Model):
     )
 
     class Meta:
+        verbose_name = 'День Рождение'
+        verbose_name_plural = 'Дни Рождения'
         constraints = (
             models.UniqueConstraint(
                 fields=('first_name', 'last_name', 'birthday'),
